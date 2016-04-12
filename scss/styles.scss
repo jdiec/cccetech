@@ -1,0 +1,42 @@
+$gray: #909090;
+
+html, body{
+        overflow-x: hidden;
+} 
+
+nav{
+    background-color: #FFFFFF;
+    
+    .navbar-fixed-top{
+        
+    }
+    a{
+        color: #1d8e2d;
+        text-transform: uppercase;
+        font-weight: 700;
+        &:hover{
+            color: #094411;  
+        } 
+    }
+    .icon-bar{
+            background-color: $gray;
+    }
+    
+}
+
+.background{
+        min-height: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 1; 
+}
+
+.background-img{
+        background-image: url("../img/trello.jpg");   
+}
+
+.jumbotron{
+        padding: 300px;
+}

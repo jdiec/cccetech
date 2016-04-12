@@ -1,0 +1,43 @@
+/* line 3, ../scss/styles.scss */
+html, body {
+  overflow-x: hidden;
+}
+
+/* line 7, ../scss/styles.scss */
+nav {
+  background-color: #FFFFFF;
+}
+/* line 13, ../scss/styles.scss */
+nav a {
+  color: #1d8e2d;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 17, ../scss/styles.scss */
+nav a:hover {
+  color: #094411;
+}
+/* line 21, ../scss/styles.scss */
+nav .icon-bar {
+  background-color: #909090;
+}
+
+/* line 27, ../scss/styles.scss */
+.background {
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+/* line 36, ../scss/styles.scss */
+.background-img {
+  background-image: url("../img/trello.jpg");
+}
+
+/* line 40, ../scss/styles.scss */
+.jumbotron {
+  padding: 300px;
+}
