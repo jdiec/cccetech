@@ -2,11 +2,10 @@ $gray: #909090;
 
 html, body{
         overflow-x: hidden;
-} 
+}
 
 nav{
     background-color: #FFFFFF;
-    
     .navbar-fixed-top{
         
     }
@@ -40,3 +39,13 @@ nav{
 .jumbotron{
         padding: 300px;
 }
+
+footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+    img{
+        
+    }
+}
+
