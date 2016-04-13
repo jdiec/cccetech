@@ -1,28 +1,47 @@
-/* line 3, ../scss/styles.scss */
-html, body {
-  overflow-x: hidden;
-}
-
-/* line 7, ../scss/styles.scss */
-nav {
-  background-color: #FFFFFF;
-}
-/* line 13, ../scss/styles.scss */
-nav a {
+/* line 5, ../scss/styles.scss */
+.heading, h1, nav a {
   color: #1d8e2d;
   text-transform: uppercase;
   font-weight: 700;
 }
-/* line 17, ../scss/styles.scss */
+
+/* line 19, ../scss/styles.scss */
+.buttonDefault, #contact #submitbutton {
+  background-color: Transparent;
+  font-size: 18pt;
+  color: #909090;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #909090;
+}
+
+/* line 28, ../scss/styles.scss */
+html, body {
+  overflow-x: hidden;
+}
+
+/* line 32, ../scss/styles.scss */
+h1 {
+  font-size: 14pt;
+  margin-bottom: 50px;
+}
+
+/* NAVIGATION BAR */
+/* line 40, ../scss/styles.scss */
+nav {
+  background-color: #FFFFFF;
+}
+/* line 47, ../scss/styles.scss */
 nav a:hover {
   color: #094411;
 }
-/* line 21, ../scss/styles.scss */
+/* line 51, ../scss/styles.scss */
 nav .icon-bar {
   background-color: #909090;
 }
 
-/* line 27, ../scss/styles.scss */
+/* JUMBOTRON */
+/* line 58, ../scss/styles.scss */
 .background {
   min-height: 100%;
   background-repeat: no-repeat;
@@ -32,12 +51,59 @@ nav .icon-bar {
   z-index: 1;
 }
 
-/* line 36, ../scss/styles.scss */
+/* line 67, ../scss/styles.scss */
 .background-img {
   background-image: url("../img/trello.jpg");
 }
 
-/* line 40, ../scss/styles.scss */
+/* line 71, ../scss/styles.scss */
 .jumbotron {
   padding: 300px;
+}
+
+/* line 75, ../scss/styles.scss */
+.content {
+  padding: 40px;
+}
+
+/* line 81, ../scss/styles.scss */
+#contact label {
+  color: saddlebrown;
+  font-weight: 300;
+}
+/* line 85, ../scss/styles.scss */
+#contact .form-control {
+  border-radius: 0px;
+  border-color: #e49b44;
+  border-width: medium;
+}
+/* line 90, ../scss/styles.scss */
+#contact #submitbutton {
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  -ms-transition: 500ms;
+  position: relative;
+  top: 30px;
+  left: 42%;
+}
+/* line 96, ../scss/styles.scss */
+#contact #submitbutton:hover {
+  color: #FFFFFF;
+  background-color: blue;
+}
+
+/* FOOTER */
+/* line 104, ../scss/styles.scss */
+footer {
+  padding-top: 30px;
+  bottom: 0;
+  z-index: 0;
+}
+/* line 109, ../scss/styles.scss */
+footer p {
+  font-size: 10pt;
+  color: #909090;
+  margin: 10px;
 }

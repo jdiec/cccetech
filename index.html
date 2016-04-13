@@ -66,8 +66,8 @@
     
     </div>
     
-    <div id="services" class="container">
-        <h1>What we do</h1>
+    <div id="services" class="container content">
+        <h1 class="text-center">What we do</h1>
         <h4>Service Consulting</h4>
         <h4>Data Service</h4>
         <h4>Password Recovery</h4>
@@ -78,9 +78,14 @@
         <h4>Automatic Film and Case Packing Machine Supply</h4>
     </div>
     
-    <div id="comparison" class="container">
-        <h1>Why You Should Choose Us</h1>
+    <div id="comparison" class="container content">
+        <h1 class="text-center">Why You Should Choose Us</h1>
         <div class="row">
+            <ul>
+                <li><h4>30 years of mechanical experience</h4></li>
+                <li><h4>Overseas factory trained</h4></li>
+                <li><h4>Willing to travel across the nation for on-site tech support</h4></li>
+            </ul>
             <div>
             </div>
             <div>
@@ -88,12 +93,56 @@
         </div>
     </div>
     
-    <footer>
-        <a href="http://www.facebook.com/profile.php?id="><img src="img/facebook.png"></a>
-        <a href="http://twitter.com/"><img src="img/twitter.png"></a>
-        <a href="http://www.linkedin.com/in/"><img src="img/linkedin.png"></a>
-        <a href="http://google.com/+"><img src="img/google_plus.png"></a>
-        <a href="mailto:"><img src="img/email.png"></a>
+    <div id="contact" class="content">
+        <div class="container">
+            <h1 class="text-center">Let's Work Together</h1>
+                <div class="row">
+                        <div class="col-sm-4 col-sm-push-4">
+                            <form name="contactForm" id="contactForm" action="//formspree.io/jpd276@cornell.edu" method="POST">
+                                    <input type="text" name="_gotcha" style="display:none" />
+                                    <div class="form-group floating-label-form-group">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control" placeholder="Name" id="name" name="Name" required>
+                                    </div>
+                                    <div class="form-group floating-label-form-group">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control" placeholder="Email" id="email" name="Email" required>
+                                    </div>
+                                    <div class="form-group floating-label-form-group">
+                                        <label>Phone</label>
+                                        <input type="text" class="form-control" placeholder="Phone" id="phone" name="Phone">
+                                    </div>
+                                    <div class="form-group floating-label-form-group">
+                                        <label>Message</label>
+                                        <textarea rows="9" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message." name="Message"></textarea>
+                                    </div>
+                                    <input id="submitbutton" type="submit" value="Send">
+
+                            </form>
+                        </div>
+                </div>
+        </div>
+    </div>
+    
+    
+    <footer>    
+            <div class="col-xs-12 col-xs-push-2 col-sm-push-5">
+                <a href="http://www.facebook.com/profile.php?id="><img src="img/facebook.png"></a>
+                <a href="http://twitter.com/"><img src="img/twitter.png"></a>
+                <a href="http://www.linkedin.com/in/"><img src="img/linkedin.png"></a>
+                <a href="http://google.com/+"><img src="img/google_plus.png"></a>
+                <a href="mailto:"><img src="img/email.png"></a>
+            </div>
+            <svg class="divider" width="100%" height="5" style="margin:auto;">
+                <line x1="35%" y1="1" x2="65%" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
+            </svg>
+            <p class="text-center">
+                © 2016 CCC E-Tech</br>
+<!--
+                This site was lovingly crafted with HTML5, </br> 
+                CSS3, and Bootstrap, with a touch of jQuery</br> 
+-->
+            </p>
     </footer>
     
     

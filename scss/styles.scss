@@ -1,18 +1,49 @@
+//@import "_bootstrap.scss";
+
 $gray: #909090;
+
+.heading{
+        color: #1d8e2d;
+        text-transform: uppercase;
+        font-weight: 700;
+}
+
+@mixin transition($duration){
+        transition: $duration;
+        -webkit-transition: $duration;
+        -moz-transition: $duration;
+        -o-transition: $duration;
+        -ms-transition: $duration;
+}
+
+.buttonDefault{
+        background-color: Transparent;
+        font-size: 18pt;
+        color: $gray;
+        border-style: solid;
+        border-width: 2px;
+        border-color: $gray;
+}
 
 html, body{
         overflow-x: hidden;
 }
 
+h1{
+    @extend .heading;
+    font-size: 14pt;
+    margin-bottom: 50px;
+}
+
+
+/* NAVIGATION BAR */
 nav{
     background-color: #FFFFFF;
     .navbar-fixed-top{
         
     }
     a{
-        color: #1d8e2d;
-        text-transform: uppercase;
-        font-weight: 700;
+        @extend .heading;
         &:hover{
             color: #094411;  
         } 
@@ -23,6 +54,7 @@ nav{
     
 }
 
+/* JUMBOTRON */
 .background{
         min-height: 100%;
         background-repeat: no-repeat;
@@ -40,12 +72,45 @@ nav{
         padding: 300px;
 }
 
+.content{
+    padding: 40px;
+}
+
+#contact{
+//    background-color: #e2e2e2;
+    label{
+        color: saddlebrown;
+        font-weight: 300;
+    }
+    .form-control{
+            border-radius: 0px;
+            border-color: #e49b44;
+            border-width: medium;
+    }
+    #submitbutton{
+            @include transition(500ms);
+            @extend .buttonDefault;
+            position: relative;
+            top: 30px;
+            left: 42%;
+            &:hover{
+                    color: #FFFFFF;
+                    background-color: blue;  
+            } 
+    }
+}
+
+/* FOOTER */
 footer{
-    position: fixed;
+//    position: fixed;
+    padding-top: 30px;
     bottom: 0;
     z-index: 0;
-    img{
-        
+    p{
+        font-size: 10pt;
+        color: $gray;
+        margin: 10px;
     }
+    
 }
 
