@@ -92,7 +92,7 @@ nav {
   /* line 133, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact label {
     color: saddlebrown;
-    font-weight: 300; }
+    font-weight: 700; }
   /* line 137, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact .form-control {
     border-radius: 0px;
@@ -117,10 +117,11 @@ nav {
       background-color: blue; }
   /* line 157, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact #submitbutton[disabled]:hover {
+    color: #909090;
     background-color: transparent; }
 
 /* FOOTER */
-/* line 164, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+/* line 165, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -128,7 +129,7 @@ footer {
   left: 50%;
   margin-left: -50%;
   z-index: -1; }
-  /* line 171, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 172, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   footer p {
     font-size: 10pt;
     color: #909090;

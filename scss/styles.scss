@@ -132,7 +132,7 @@ nav{
     background-color: #e5eaee;
     label{
         color: saddlebrown;
-        font-weight: 300;
+        font-weight: 700;
     }
     .form-control{
             border-radius: 0px;
@@ -155,6 +155,7 @@ nav{
     }
     #submitbutton[disabled]{
         &:hover{
+            color: $gray;
             background-color: transparent;
         }
     }
