@@ -1,0 +1,126 @@
+/* line 27, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+.heading, h1, nav a {
+  color: #1d8e2d;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+/* line 41, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+.buttonDefault, #contact #submitbutton {
+  background-color: Transparent;
+  font-size: 18pt;
+  color: #909090;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #909090; }
+
+/* line 50, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+html, body {
+  overflow-x: hidden; }
+
+/* line 54, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+h1 {
+  font-size: 14pt;
+  margin-bottom: 50px; }
+
+/* NAVIGATION BAR */
+/* line 62, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+nav {
+  background-color: #FFFFFF; }
+  /* line 69, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  nav a:hover {
+    color: #094411; }
+  /* line 73, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  nav .icon-bar {
+    background-color: #909090; }
+
+/* JUMBOTRON */
+/* line 80, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+.background {
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1; }
+
+/* line 89, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+.background-img {
+  background-image: url("../img/trello.jpg"); }
+
+/* line 93, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+.jumbotron {
+  padding: 300px; }
+
+/* line 97, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+.content {
+  padding: 40px; }
+
+/* line 101, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+#services {
+  margin-top: -3%;
+  padding: 7% 7% 7% 7%; }
+  @media (min-width: 768px) {
+    /* line 105, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+    #services h4 {
+      font-size: 16pt; } }
+  @media (max-width: 767px) {
+    /* line 105, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+    #services h4 {
+      font-size: 10pt; } }
+  /* line 113, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  #services img {
+    height: 150px;
+    width: 150px;
+    overflow: hidden; }
+    @media (max-width: 767px) {
+      /* line 113, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+      #services img {
+        height: 100px;
+        width: 100px; } }
+  /* line 122, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  #services .col-xs-6, #services .col-sm-4 {
+    margin-bottom: 30px; }
+
+/* line 127, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+#contact {
+  background-color: #e5eaee; }
+  /* line 129, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  #contact label {
+    color: saddlebrown;
+    font-weight: 300; }
+  /* line 133, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  #contact .form-control {
+    border-radius: 0px;
+    border-color: #e49b44;
+    border-width: medium; }
+  /* line 138, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  #contact #submitbutton {
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    -ms-transition: 500ms;
+    position: relative;
+    top: 30px;
+    left: 42%; }
+    /* line 144, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+    #contact #submitbutton:hover {
+      color: #FFFFFF;
+      background-color: blue; }
+
+/* FOOTER */
+/* line 152, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50%;
+  z-index: -1; }
+  /* line 159, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  footer p {
+    font-size: 10pt;
+    color: #909090;
+    margin: 10px; }
+
+/*# sourceMappingURL=styles.css.map */

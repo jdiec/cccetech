@@ -1,6 +1,28 @@
 //@import "_bootstrap.scss";
 
-$gray: #909090;
+$gray: #909090; 
+
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+ 
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+ 
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+ 
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
 
 .heading{
         color: #1d8e2d;
@@ -76,8 +98,34 @@ nav{
     padding: 40px;
 }
 
+#services{
+    margin-top: -3%;
+    padding: 7% 7% 7% 7%;
+    //background-color: #e5eaee;
+    h4{
+        @include breakpoint(sm){
+            font-size: 16pt;
+        }
+        @include breakpoint(xs){
+            font-size: 10pt;
+        }
+    }
+    img{
+        height: 150px;
+        width: 150px;
+        overflow: hidden;
+        @include breakpoint(xs){
+            height: 100px;
+            width: 100px; 
+        }
+    }
+    .col-xs-6, .col-sm-4 {
+        margin-bottom: 30px;
+    }
+}
+
 #contact{
-//    background-color: #e2e2e2;
+    background-color: #e5eaee;
     label{
         color: saddlebrown;
         font-weight: 300;
@@ -102,10 +150,12 @@ nav{
 
 /* FOOTER */
 footer{
-//    position: fixed;
-    padding-top: 30px;
+    width:100%;
+    position: fixed;
     bottom: 0;
-    z-index: 0;
+    left: 50%;
+    margin-left: -50%;
+    z-index: -1;
     p{
         font-size: 10pt;
         color: $gray;
