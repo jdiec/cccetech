@@ -70,6 +70,7 @@ nav .icon-bar {
 #services {
   margin-top: -3%;
   padding: 7% 7% 7% 7%;
+  background-color: #FFFFFF;
 }
 @media (min-width: 768px) {
   /* line 105, ../scss/styles.scss */
@@ -102,21 +103,30 @@ nav .icon-bar {
 }
 
 /* line 127, ../scss/styles.scss */
+#comparison {
+  background-color: #FFFFFF;
+}
+
+/* line 131, ../scss/styles.scss */
 #contact {
   background-color: #e5eaee;
 }
-/* line 129, ../scss/styles.scss */
+/* line 133, ../scss/styles.scss */
 #contact label {
   color: saddlebrown;
   font-weight: 300;
 }
-/* line 133, ../scss/styles.scss */
+/* line 137, ../scss/styles.scss */
 #contact .form-control {
   border-radius: 0px;
   border-color: #e49b44;
   border-width: medium;
 }
-/* line 138, ../scss/styles.scss */
+/* line 142, ../scss/styles.scss */
+#contact span {
+  color: red;
+}
+/* line 145, ../scss/styles.scss */
 #contact #submitbutton {
   transition: 500ms;
   -webkit-transition: 500ms;
@@ -127,14 +137,18 @@ nav .icon-bar {
   top: 30px;
   left: 42%;
 }
-/* line 144, ../scss/styles.scss */
+/* line 151, ../scss/styles.scss */
 #contact #submitbutton:hover {
   color: #FFFFFF;
   background-color: blue;
 }
+/* line 157, ../scss/styles.scss */
+#contact #submitbutton[disabled]:hover {
+  background-color: transparent;
+}
 
 /* FOOTER */
-/* line 152, ../scss/styles.scss */
+/* line 164, ../scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -143,7 +157,7 @@ footer {
   margin-left: -50%;
   z-index: -1;
 }
-/* line 159, ../scss/styles.scss */
+/* line 171, ../scss/styles.scss */
 footer p {
   font-size: 10pt;
   color: #909090;

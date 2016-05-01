@@ -85,17 +85,12 @@
         </div>
     </div>
     
-    <div id="comparison" class="container content">
+    <div id="comparison" class="container content" ng-controller="ComparisonsController">
         <h1 class="text-center">Why You Should Choose Us</h1>
         <div class="row">
-            <ul>
-                <li><h4>30 years of mechanical experience</h4></li>
-                <li><h4>Overseas factory trained</h4></li>
-                <li><h4>Willing to travel across the nation for on-site tech support</h4></li>
-            </ul>
-            <div>
-            </div>
-            <div>
+            <div class="col-xs-12 col-sm-4" ng-repeat="comparison in comparisons">
+                <h4>{{comparison.name}}</h4>
+                <p>{{comparison.description}}</p>
             </div>
         </div>
     </div>
@@ -105,25 +100,28 @@
             <h1 class="text-center">Let's Work Together</h1>
                 <div class="row">
                         <div class="col-sm-4 col-sm-push-4">
-                            <form name="contactForm" id="contactForm" action="//formspree.io/jpd276@cornell.edu" method="POST">
+                            <form name="contactForm" id="contactForm" action="//formspree.io/jpd276@cornell.edu" method="POST" novalidate>
                                     <input type="text" name="_gotcha" style="display:none" />
                                     <div class="form-group floating-label-form-group">
                                         <label>Name</label>
-                                        <input type="text" class="form-control" placeholder="Name" id="name" name="Name" required>
+                                        <input type="text" class="form-control" placeholder="Name" id="name" name="Name" ng-model="name" required>
+                                        <span ng-show="contactForm.Name.$touched && contactForm.Name.$invalid">Please enter your name.</span>
                                     </div>
                                     <div class="form-group floating-label-form-group">
                                         <label>Email</label>
-                                        <input type="text" class="form-control" placeholder="Email" id="email" name="Email" required>
+                                        <input type="email" class="form-control" placeholder="Email" id="email" name="Email" ng-model="email">
+                                        <span ng-show="contactForm.Email.$touched && contactForm.Email.$error.email">Please enter a valid email.</span>
                                     </div>
                                     <div class="form-group floating-label-form-group">
                                         <label>Phone</label>
-                                        <input type="text" class="form-control" placeholder="Phone" id="phone" name="Phone">
+                                        <input type="text" class="form-control" placeholder="Phone" id="phone" name="Phone" ng-model="phone">
                                     </div>
                                     <div class="form-group floating-label-form-group">
                                         <label>Message</label>
-                                        <textarea rows="9" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message." name="Message"></textarea>
+                                        <textarea rows="9" class="form-control" placeholder="Message" id="message" name="Message" ng-model="message" required></textarea>
+                                        <span ng-show="contactForm.Message.$touched && contactForm.Message.$invalid">Please enter a message.</span>
                                     </div>
-                                    <input id="submitbutton" type="submit" value="Send">
+                                    <input id="submitbutton" type="submit" value="Send" ng-disabled="contactForm.$invalid || (!email.length && !phone.length)">
 
                             </form>
                         </div>

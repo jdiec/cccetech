@@ -14,3 +14,12 @@ cccetechApp
         $scope.services = servicesFactory.getServices();
         
     }])
+    
+    .controller('ComparisonsController', ['$scope', 'comparisonFactory', function($scope, comparisonFactory){
+        
+        $scope.comparisons = comparisonFactory.getComparisons();
+        
+    }])
+
+
+;

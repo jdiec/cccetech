@@ -12,10 +12,21 @@ cccetechApp
         ];
         this.getServices = function(){
             return services;
-        }
+        };
         this.getService = function(index){
             return services[index];
-        }
+        };
+    }])
+
+    .service('comparisonFactory', [function(){
+        var comparisons = [
+                            {name:"Experience", img:"", description:"30 years of mechanical experience, overseas factory trained"},
+                            {name:"Affordability", img:"", description:"Lower cost for higher quality compared to traditional services"},
+                            {name:"Flexibility", img:"", description:"Willing to travel across the nation for on-site tech support"}
+        ];
+        this.getComparisons = function(){
+            return comparisons;    
+        };
     }])
 
 ;

@@ -58,7 +58,8 @@ nav {
 /* line 101, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
 #services {
   margin-top: -3%;
-  padding: 7% 7% 7% 7%; }
+  padding: 7% 7% 7% 7%;
+  background-color: #FFFFFF; }
   @media (min-width: 768px) {
     /* line 105, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
     #services h4 {
@@ -82,18 +83,25 @@ nav {
     margin-bottom: 30px; }
 
 /* line 127, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+#comparison {
+  background-color: #FFFFFF; }
+
+/* line 131, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
 #contact {
   background-color: #e5eaee; }
-  /* line 129, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 133, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact label {
     color: saddlebrown;
     font-weight: 300; }
-  /* line 133, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 137, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact .form-control {
     border-radius: 0px;
     border-color: #e49b44;
     border-width: medium; }
-  /* line 138, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 142, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  #contact span {
+    color: red; }
+  /* line 145, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact #submitbutton {
     transition: 500ms;
     -webkit-transition: 500ms;
@@ -103,13 +111,16 @@ nav {
     position: relative;
     top: 30px;
     left: 42%; }
-    /* line 144, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+    /* line 151, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
     #contact #submitbutton:hover {
       color: #FFFFFF;
       background-color: blue; }
+  /* line 157, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  #contact #submitbutton[disabled]:hover {
+    background-color: transparent; }
 
 /* FOOTER */
-/* line 152, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+/* line 164, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -117,7 +128,7 @@ footer {
   left: 50%;
   margin-left: -50%;
   z-index: -1; }
-  /* line 159, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 171, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   footer p {
     font-size: 10pt;
     color: #909090;

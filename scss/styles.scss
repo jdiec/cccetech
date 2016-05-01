@@ -101,7 +101,7 @@ nav{
 #services{
     margin-top: -3%;
     padding: 7% 7% 7% 7%;
-    //background-color: #e5eaee;
+    background-color: #FFFFFF;
     h4{
         @include breakpoint(sm){
             font-size: 16pt;
@@ -124,6 +124,10 @@ nav{
     }
 }
 
+#comparison{
+    background-color: #FFFFFF;
+}
+
 #contact{
     background-color: #e5eaee;
     label{
@@ -135,6 +139,9 @@ nav{
             border-color: #e49b44;
             border-width: medium;
     }
+    span{
+        color: red;
+    }
     #submitbutton{
             @include transition(500ms);
             @extend .buttonDefault;
@@ -145,6 +152,11 @@ nav{
                     color: #FFFFFF;
                     background-color: blue;  
             } 
+    }
+    #submitbutton[disabled]{
+        &:hover{
+            background-color: transparent;
+        }
     }
 }
 
