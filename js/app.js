@@ -1,4 +1,4 @@
-var cccetechApp = angular.module('cccetechApp', ['ui.router']);
+var cccetechApp = angular.module('cccetechApp', ['ui.router', 'duScroll']);
 
 cccetechApp.config(function($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/');

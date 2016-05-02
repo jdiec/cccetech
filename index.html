@@ -23,12 +23,13 @@
     <!--AngularJS-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
 
 </head>
-<body ng-controller="MainController">
+<body data-spy="scroll" data-target=".navbar" data-offset="100" ng-controller="MainController">
     <div ui-view="header"></div>
     <div ui-view="content"></div>
     <div style="padding:100px;"></div>

@@ -1,7 +1,7 @@
 cccetechApp
-    .controller('MainController', ['$scope', '$location',
+    .controller('MainController', ['$scope', '$document', '$location',
                 '$anchorScroll', 
-                function($scope, $location, $anchorScroll){
+                function($scope, $document, $location, $anchorScroll){
                     
             $scope.iterations = function(steps){
                 var arr = [];
@@ -11,10 +11,18 @@ cccetechApp
                 return arr;
             }
             
-            $scope.anchorScrollTo = function(targetID){
-                $location.hash(targetID);
-                $anchorScroll();
+            $scope.duScrollTo = function(targetID){
+                  
+                  var element = angular.element(document.getElementById(targetID));
+                  $document.scrollToElementAnimated(element);
             };
+            
+            
+            
+//            $scope.anchorScrollTo = function(targetID){
+//                $location.hash(targetID);
+//                $anchorScroll();
+//            };
         
         
     }])
