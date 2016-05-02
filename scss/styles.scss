@@ -64,11 +64,17 @@ nav{
     .navbar-fixed-top{
         
     }
+    li{
+        @include transition(1s);
+    }
     a{
         @extend .heading;
         &:hover{
             color: #094411;  
         } 
+    }
+    .active{
+        background-color: #eee;
     }
     .icon-bar{
             background-color: $gray;

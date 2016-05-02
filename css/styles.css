@@ -31,17 +31,29 @@ h1 {
 nav {
   background-color: #FFFFFF;
 }
-/* line 69, ../scss/styles.scss */
+/* line 67, ../scss/styles.scss */
+nav li {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+}
+/* line 72, ../scss/styles.scss */
 nav a:hover {
   color: #094411;
 }
-/* line 73, ../scss/styles.scss */
+/* line 76, ../scss/styles.scss */
+nav .active {
+  background-color: #eee;
+}
+/* line 79, ../scss/styles.scss */
 nav .icon-bar {
   background-color: #909090;
 }
 
 /* JUMBOTRON */
-/* line 80, ../scss/styles.scss */
+/* line 86, ../scss/styles.scss */
 .background {
   min-height: 100%;
   background-repeat: no-repeat;
@@ -51,82 +63,82 @@ nav .icon-bar {
   z-index: 1;
 }
 
-/* line 89, ../scss/styles.scss */
+/* line 95, ../scss/styles.scss */
 .background-img {
   background-image: url("../img/trello.jpg");
 }
 
-/* line 93, ../scss/styles.scss */
+/* line 99, ../scss/styles.scss */
 .jumbotron {
   padding: 300px;
 }
 
-/* line 97, ../scss/styles.scss */
+/* line 103, ../scss/styles.scss */
 .content {
   padding: 40px;
 }
 
-/* line 101, ../scss/styles.scss */
+/* line 107, ../scss/styles.scss */
 #services {
   margin-top: -3%;
   padding: 7% 7% 7% 7%;
   background-color: #FFFFFF;
 }
 @media (min-width: 768px) {
-  /* line 105, ../scss/styles.scss */
+  /* line 111, ../scss/styles.scss */
   #services h4 {
     font-size: 16pt;
   }
 }
 @media (max-width: 767px) {
-  /* line 105, ../scss/styles.scss */
+  /* line 111, ../scss/styles.scss */
   #services h4 {
     font-size: 10pt;
   }
 }
-/* line 113, ../scss/styles.scss */
+/* line 119, ../scss/styles.scss */
 #services img {
   height: 150px;
   width: 150px;
   overflow: hidden;
 }
 @media (max-width: 767px) {
-  /* line 113, ../scss/styles.scss */
+  /* line 119, ../scss/styles.scss */
   #services img {
     height: 100px;
     width: 100px;
   }
 }
-/* line 122, ../scss/styles.scss */
+/* line 128, ../scss/styles.scss */
 #services .col-xs-6, #services .col-sm-4 {
   margin-bottom: 30px;
 }
 
-/* line 127, ../scss/styles.scss */
+/* line 133, ../scss/styles.scss */
 #comparison {
   background-color: #fdf2ef;
 }
 
-/* line 131, ../scss/styles.scss */
+/* line 137, ../scss/styles.scss */
 #contact {
   background-color: #e5eaee;
 }
-/* line 133, ../scss/styles.scss */
+/* line 139, ../scss/styles.scss */
 #contact label {
   color: saddlebrown;
   font-weight: 700;
 }
-/* line 137, ../scss/styles.scss */
+/* line 143, ../scss/styles.scss */
 #contact .form-control {
   border-radius: 0px;
   border-color: #e49b44;
   border-width: medium;
 }
-/* line 142, ../scss/styles.scss */
+/* line 148, ../scss/styles.scss */
 #contact span {
   color: red;
 }
-/* line 145, ../scss/styles.scss */
+/* line 151, ../scss/styles.scss */
 #contact #submitbutton {
   transition: 500ms;
   -webkit-transition: 500ms;
@@ -134,19 +146,19 @@ nav .icon-bar {
   -o-transition: 500ms;
   -ms-transition: 500ms;
 }
-/* line 148, ../scss/styles.scss */
+/* line 154, ../scss/styles.scss */
 #contact #submitbutton:hover {
   color: #FFFFFF;
   background-color: blue;
 }
-/* line 154, ../scss/styles.scss */
+/* line 160, ../scss/styles.scss */
 #contact #submitbutton[disabled]:hover {
   color: #909090;
   background-color: transparent;
 }
 
 /* FOOTER */
-/* line 162, ../scss/styles.scss */
+/* line 168, ../scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -155,7 +167,7 @@ footer {
   margin-left: -50%;
   z-index: -1;
 }
-/* line 169, ../scss/styles.scss */
+/* line 175, ../scss/styles.scss */
 footer p {
   font-size: 10pt;
   color: #909090;
