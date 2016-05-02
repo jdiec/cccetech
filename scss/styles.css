@@ -84,7 +84,7 @@ nav {
 
 /* line 127, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
 #comparison {
-  background-color: #FFFFFF; }
+  background-color: #fdf2ef; }
 
 /* line 131, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
 #contact {
@@ -107,21 +107,18 @@ nav {
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
-    -ms-transition: 500ms;
-    position: relative;
-    top: 30px;
-    left: 42%; }
-    /* line 151, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+    -ms-transition: 500ms; }
+    /* line 148, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
     #contact #submitbutton:hover {
       color: #FFFFFF;
       background-color: blue; }
-  /* line 157, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 154, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact #submitbutton[disabled]:hover {
     color: #909090;
     background-color: transparent; }
 
 /* FOOTER */
-/* line 165, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+/* line 162, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -129,7 +126,7 @@ footer {
   left: 50%;
   margin-left: -50%;
   z-index: -1; }
-  /* line 172, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 169, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   footer p {
     font-size: 10pt;
     color: #909090;

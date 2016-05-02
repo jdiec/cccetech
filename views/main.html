@@ -1,0 +1,64 @@
+<div id="main">   
+    <div class="jumbotron background background-img">
+    </div>
+    
+    <div id="services" class="content" ng-controller="ServicesController">
+        <h1 class="text-center">What we do</h1>
+        <div class="row">
+            <div class="col-xs-12 col-xs-push-0">
+                <div class="col-xs-6 col-sm-4 text-center" ng-repeat="service in services">
+                    <a ui-sref="app.details({id:service.id})"><img class="img-circle" ng-src={{service.img}} alt={{service.name}}></a>
+                    <div class="col-xs-8 col-xs-push-2"><h4>{{service.name}}</h4></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div id="comparison" class="content" ng-controller="ComparisonsController">
+        <h1 class="text-center">Why You Should Choose Us</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4" ng-repeat="comparison in comparisons">
+                <h4>{{comparison.name}}</h4>
+                <p>{{comparison.description}}</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div id="contact" class="content text-center">
+        <div class="container">
+            <h1 class="text-center">Let's Work Together</h1>
+                <div class="row">
+                        <div class="col-sm-4 col-sm-push-4">
+                            <form name="contactForm" id="contactForm" action="//formspree.io/jpd276@cornell.edu" method="POST" novalidate>
+                                    <input type="text" name="_gotcha" style="display:none" />
+                                    <div class="form-group floating-label-form-group">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control" placeholder="Name" id="name" name="Name" ng-model="name" required>
+                                        <span ng-show="contactForm.Name.$touched && contactForm.Name.$invalid">Please enter your name.</span>
+                                    </div>
+                                    <div class="form-group floating-label-form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" placeholder="Email" id="email" name="Email" ng-model="email">
+                                        <span ng-show="contactForm.Email.$touched && contactForm.Email.$error.email">Please enter a valid email.</span>
+                                    </div>
+                                    <div class="form-group floating-label-form-group">
+                                        <label>Phone</label>
+                                        <input type="text" class="form-control" placeholder="Phone" id="phone" name="Phone" ng-model="phone">
+                                    </div>
+                                    <div class="form-group floating-label-form-group">
+                                        <label>Message</label>
+                                        <textarea rows="9" class="form-control" placeholder="Message" id="message" name="Message" ng-model="message" required></textarea>
+                                        <span ng-show="contactForm.Message.$touched && contactForm.Message.$invalid">Please enter a message.</span>
+                                    </div>
+                                    <input id="submitbutton" type="submit" value="Send" ng-disabled="contactForm.$invalid || (!email.length && !phone.length)">
+
+                            </form>
+                        </div>
+                </div>
+        </div>
+    </div>
+</div>

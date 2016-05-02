@@ -125,7 +125,7 @@ nav{
 }
 
 #comparison{
-    background-color: #FFFFFF;
+    background-color: #fdf2ef; //#FFFFFF;
 }
 
 #contact{
@@ -145,9 +145,6 @@ nav{
     #submitbutton{
             @include transition(500ms);
             @extend .buttonDefault;
-            position: relative;
-            top: 30px;
-            left: 42%;
             &:hover{
                     color: #FFFFFF;
                     background-color: blue;  
