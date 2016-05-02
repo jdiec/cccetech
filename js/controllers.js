@@ -10,14 +10,10 @@ cccetechApp
                 }
                 return arr;
             }
-
-            $scope.goToAnchor = function(x){
-                var newHash = 'anchor' + x;
-                if ($location.hash() !== newHash){
-                        $location.hash('anchor' + x);
-                }else{
-                    $anchorScroll();
-                }
+            
+            $scope.anchorScrollTo = function(targetID){
+                $location.hash(targetID);
+                $anchorScroll();
             };
         
         
