@@ -1,6 +1,58 @@
 //@import "_bootstrap.scss";
-
 $gray: #909090; 
+
+.slide-pop {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.slide-pop.ng-enter,
+.slide-pop.ng-leave {
+	-webkit-transition: all .6s linear;
+	transition: all .6s linear;
+}
+.slide-pop.ng-enter {
+	opacity: 0;
+	-webkit-transform: scale(.5);
+	transform: scale(.5);
+}
+.slide-pop.ng-enter-active {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.slide-pop.ng-leave {
+	left: 0;
+	opacity: .5;
+}
+.slide-pop.ng-leave-active {
+	left: -100%;
+	opacity: 0;
+}
+
+.reverse .page.slide-pop.ng-enter {
+	opacity: .5;
+	left: -100%;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.reverse .page.slide-pop.ng-enter-active {
+	opacity: 1;
+	left: 0;
+}
+.reverse .page.slide-pop.ng-leave {
+	opacity: .5;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	left: 0;
+	right: 0;
+}
+.reverse .page.slide-pop.ng-leave-active {
+	opacity: 0;
+	-webkit-transform: scale(.5);
+	transform: scale(.5);
+}
 
 @mixin breakpoint($class) {
   @if $class == xs {
@@ -109,6 +161,7 @@ nav{
     padding: 7% 7% 7% 7%;
     background-color: #FFFFFF;
     h4{
+        font-family: 'Noto Sans', sans-serif;
         &:hover{
             
         }
@@ -140,6 +193,10 @@ nav{
 
 #comparison{
     background-color: #fdf2ef; //#FFFFFF;
+}
+
+#testimonials{
+    background-color: #FFFFFF;
 }
 
 #contact{

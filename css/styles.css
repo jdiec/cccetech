@@ -1,11 +1,82 @@
-/* line 27, ../scss/styles.scss */
+/* line 4, ../scss/styles.scss */
+.slide-pop {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 10, ../scss/styles.scss */
+.slide-pop.ng-enter,
+.slide-pop.ng-leave {
+  -webkit-transition: all .6s linear;
+  transition: all .6s linear;
+}
+
+/* line 15, ../scss/styles.scss */
+.slide-pop.ng-enter {
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 20, ../scss/styles.scss */
+.slide-pop.ng-enter-active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 25, ../scss/styles.scss */
+.slide-pop.ng-leave {
+  left: 0;
+  opacity: .5;
+}
+
+/* line 29, ../scss/styles.scss */
+.slide-pop.ng-leave-active {
+  left: -100%;
+  opacity: 0;
+}
+
+/* line 34, ../scss/styles.scss */
+.reverse .page.slide-pop.ng-enter {
+  opacity: .5;
+  left: -100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 40, ../scss/styles.scss */
+.reverse .page.slide-pop.ng-enter-active {
+  opacity: 1;
+  left: 0;
+}
+
+/* line 44, ../scss/styles.scss */
+.reverse .page.slide-pop.ng-leave {
+  opacity: .5;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  left: 0;
+  right: 0;
+}
+
+/* line 51, ../scss/styles.scss */
+.reverse .page.slide-pop.ng-leave-active {
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 79, ../scss/styles.scss */
 .heading, h1, nav a {
   color: #1d8e2d;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-/* line 41, ../scss/styles.scss */
+/* line 93, ../scss/styles.scss */
 .buttonDefault, #contact form #submitbutton {
   background-color: Transparent;
   font-size: 18pt;
@@ -15,23 +86,23 @@
   border-color: #909090;
 }
 
-/* line 50, ../scss/styles.scss */
+/* line 102, ../scss/styles.scss */
 html, body {
   overflow-x: hidden;
 }
 
-/* line 54, ../scss/styles.scss */
+/* line 106, ../scss/styles.scss */
 h1 {
   font-size: 14pt;
   margin-bottom: 50px;
 }
 
 /* NAVIGATION BAR */
-/* line 62, ../scss/styles.scss */
+/* line 114, ../scss/styles.scss */
 nav {
   background-color: #FFFFFF;
 }
-/* line 67, ../scss/styles.scss */
+/* line 119, ../scss/styles.scss */
 nav li {
   transition: 1s;
   -webkit-transition: 1s;
@@ -39,21 +110,21 @@ nav li {
   -o-transition: 1s;
   -ms-transition: 1s;
 }
-/* line 72, ../scss/styles.scss */
+/* line 124, ../scss/styles.scss */
 nav a:hover {
   color: #094411;
 }
-/* line 76, ../scss/styles.scss */
+/* line 128, ../scss/styles.scss */
 nav .active {
   background-color: #eee;
 }
-/* line 79, ../scss/styles.scss */
+/* line 131, ../scss/styles.scss */
 nav .icon-bar {
   background-color: #909090;
 }
 
 /* JUMBOTRON */
-/* line 86, ../scss/styles.scss */
+/* line 138, ../scss/styles.scss */
 .background {
   min-height: 100%;
   background-repeat: no-repeat;
@@ -63,29 +134,30 @@ nav .icon-bar {
   z-index: 1;
 }
 
-/* line 95, ../scss/styles.scss */
+/* line 147, ../scss/styles.scss */
 .background-img {
   background-image: url("../img/trello.jpg");
 }
 
-/* line 99, ../scss/styles.scss */
+/* line 151, ../scss/styles.scss */
 .jumbotron {
   padding: 300px;
 }
 
-/* line 103, ../scss/styles.scss */
+/* line 155, ../scss/styles.scss */
 .content {
   padding: 40px;
 }
 
-/* line 107, ../scss/styles.scss */
+/* line 159, ../scss/styles.scss */
 #services {
   margin-top: -3%;
   padding: 7% 7% 7% 7%;
   background-color: #FFFFFF;
 }
-/* line 111, ../scss/styles.scss */
+/* line 163, ../scss/styles.scss */
 #services h4 {
+  font-family: 'Noto Sans', sans-serif;
   transition: 500ms;
   -webkit-transition: 500ms;
   -moz-transition: 500ms;
@@ -93,18 +165,18 @@ nav .icon-bar {
   -ms-transition: 500ms;
 }
 @media (min-width: 768px) {
-  /* line 111, ../scss/styles.scss */
+  /* line 163, ../scss/styles.scss */
   #services h4 {
     font-size: 16pt;
   }
 }
 @media (max-width: 767px) {
-  /* line 111, ../scss/styles.scss */
+  /* line 163, ../scss/styles.scss */
   #services h4 {
     font-size: 10pt;
   }
 }
-/* line 123, ../scss/styles.scss */
+/* line 176, ../scss/styles.scss */
 #services img {
   height: 150px;
   width: 150px;
@@ -116,42 +188,47 @@ nav .icon-bar {
   -ms-transition: 500ms;
 }
 @media (max-width: 767px) {
-  /* line 123, ../scss/styles.scss */
+  /* line 176, ../scss/styles.scss */
   #services img {
     height: 100px;
     width: 100px;
   }
 }
-/* line 136, ../scss/styles.scss */
+/* line 189, ../scss/styles.scss */
 #services .col-xs-6, #services .col-sm-4 {
   margin-bottom: 30px;
 }
 
-/* line 141, ../scss/styles.scss */
+/* line 194, ../scss/styles.scss */
 #comparison {
   background-color: #fdf2ef;
 }
 
-/* line 145, ../scss/styles.scss */
+/* line 198, ../scss/styles.scss */
+#testimonials {
+  background-color: #FFFFFF;
+}
+
+/* line 202, ../scss/styles.scss */
 #contact {
   background-color: #e5eaee;
 }
-/* line 148, ../scss/styles.scss */
+/* line 205, ../scss/styles.scss */
 #contact form label {
   color: saddlebrown;
   font-weight: 700;
 }
-/* line 152, ../scss/styles.scss */
+/* line 209, ../scss/styles.scss */
 #contact form .form-control {
   border-radius: 0px;
   border-color: #e49b44;
   border-width: medium;
 }
-/* line 157, ../scss/styles.scss */
+/* line 214, ../scss/styles.scss */
 #contact form span {
   color: red;
 }
-/* line 160, ../scss/styles.scss */
+/* line 217, ../scss/styles.scss */
 #contact form #submitbutton {
   transition: 500ms;
   -webkit-transition: 500ms;
@@ -159,19 +236,19 @@ nav .icon-bar {
   -o-transition: 500ms;
   -ms-transition: 500ms;
 }
-/* line 163, ../scss/styles.scss */
+/* line 220, ../scss/styles.scss */
 #contact form #submitbutton:hover {
   color: #FFFFFF;
   background-color: blue;
 }
-/* line 169, ../scss/styles.scss */
+/* line 226, ../scss/styles.scss */
 #contact form #submitbutton[disabled]:hover {
   color: #909090;
   background-color: transparent;
 }
 
 /* FOOTER */
-/* line 178, ../scss/styles.scss */
+/* line 235, ../scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -180,7 +257,7 @@ footer {
   margin-left: -50%;
   z-index: -1;
 }
-/* line 185, ../scss/styles.scss */
+/* line 242, ../scss/styles.scss */
 footer p {
   font-size: 10pt;
   color: #909090;

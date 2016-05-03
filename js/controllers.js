@@ -51,5 +51,9 @@ cccetechApp
         
     }])
 
+    .controller('TestimonialsController', ['$scope', function($scope){
+        
+    }])
+
 
 ;

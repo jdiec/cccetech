@@ -7,6 +7,9 @@
     
     <title>CCC E-Tech</title>
     
+    <!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    
     <!--Stylesheets-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -23,6 +26,7 @@
     <!--AngularJS-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
@@ -31,7 +35,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="100" ng-controller="MainController">
     <div ui-view="header"></div>
-    <div ui-view="content"></div>
+    <div ui-view="content" class="slide-pop"></div>
     <div style="padding:100px;"></div>
     <div ui-view="footer"></div>    
 </body>
