@@ -9,8 +9,11 @@ cccetechApp.config(function($stateProvider, $urlRouterProvider){
                 'header' : {
                     templateUrl : 'views/header.html',
                 },
-                'content' : {
-                    templateUrl : 'views/main.html',  
+                'services' : {
+                    templateUrl : 'views/services.html'  
+                },
+                'main' : {
+                    templateUrl : 'views/main.html'  
                 },
                 'footer' : {
                     templateUrl : 'views/footer.html',
@@ -21,7 +24,7 @@ cccetechApp.config(function($stateProvider, $urlRouterProvider){
         .state('app.details', {
             url : 'services/:id',
             views : {
-                'content@' : {
+                'services@' : {
                     templateUrl : 'views/servicedetails.html',
                     controller : 'ServiceDetailController'
                 }
