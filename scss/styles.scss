@@ -109,6 +109,10 @@ nav{
     padding: 7% 7% 7% 7%;
     background-color: #FFFFFF;
     h4{
+        &:hover{
+            
+        }
+        @include transition(500ms);
         @include breakpoint(sm){
             font-size: 16pt;
         }
@@ -120,6 +124,10 @@ nav{
         height: 150px;
         width: 150px;
         overflow: hidden;
+        &:hover{
+
+        }
+        @include transition(500ms);
         @include breakpoint(xs){
             height: 100px;
             width: 100px; 
@@ -136,30 +144,32 @@ nav{
 
 #contact{
     background-color: #e5eaee;
-    label{
-        color: saddlebrown;
-        font-weight: 700;
-    }
-    .form-control{
-            border-radius: 0px;
-            border-color: #e49b44;
-            border-width: medium;
-    }
-    span{
-        color: red;
-    }
-    #submitbutton{
-            @include transition(500ms);
-            @extend .buttonDefault;
+    form{
+        label{
+            color: saddlebrown;
+            font-weight: 700;
+        }
+        .form-control{
+                border-radius: 0px;
+                border-color: #e49b44;
+                border-width: medium;
+        }
+        span{
+            color: red;
+        }
+        #submitbutton{
+                @include transition(500ms);
+                @extend .buttonDefault;
+                &:hover{
+                        color: #FFFFFF;
+                        background-color: blue;  
+                } 
+        }
+        #submitbutton[disabled]{
             &:hover{
-                    color: #FFFFFF;
-                    background-color: blue;  
-            } 
-    }
-    #submitbutton[disabled]{
-        &:hover{
-            color: $gray;
-            background-color: transparent;
+                color: $gray;
+                background-color: transparent;
+            }
         }
     }
 }

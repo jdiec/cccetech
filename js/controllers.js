@@ -39,9 +39,7 @@ cccetechApp
                  function($scope, servicesFactory, $stateParams){
                      
             $scope.service = servicesFactory
-                            .getService(parseInt($stateParams.id,10));
-                     
-            console.log($scope.service);
+                            .getService(parseInt($stateParams.id,10));                     
     }])
     
     .controller('ComparisonsController', ['$scope', 
