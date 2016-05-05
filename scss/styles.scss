@@ -223,9 +223,27 @@ nav{
 
 #servicedetails{
     background-color: #FFFFFF;
-    img{
-        
+    h4.title{
+        padding-bottom: 40px;
     }
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    .col-xs-12.main{
+        img{
+            height: 300px;
+            width: 100%;
+        }
+    }
+    .content{
+        margin-top: 10px;
+    }
+    .footer{
+        padding: 40px;
+        padding-top: 80px;
+    }
+
 }
 
 #comparison{

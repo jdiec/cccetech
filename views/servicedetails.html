@@ -1,9 +1,48 @@
 <div id="servicedetails" ng-controller="ServiceDetailController">
     <div class="container content">
         <a ui-sref="app"><h4>Back</h4></a>
-        <h4>{{service.name}}</h4>
-        <img ng-src={{service.img}} alt={{service.name}}>
-        <p>{{service.description}}</p>
+        
+        <div class="row">
+            <div class="col-xs-12 text-center main content">
+                <h4 class="title">{{service.name}}</h4>
+                <img ng-src={{service.img}} alt={{service.name}}>
+            </div>
+            <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center">
+                Description:
+                <p>{{service.description}}</p>
+                <p>The Capon Lake Whipple Truss Bridge is a historic bridge across the Cacapon River in Capon Lake, West Virginia. The bridge's Whipple truss technology was developed by civil engineer Squire Whipple in 1847, and modified by J. W. Murphy in 1859 to include pinned eyebar connections. The bridge is West Virginia's oldest remaining Whipple truss bridge and its oldest intact metal truss bridge.</p>
+            </div>
+        </div>
+        
+        <div class="row content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-1">
+                <img ng-src={{service.img}} alt={{service.name}}>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-push-2 content" style="background-color:#eee;">
+                <p>The Capon Lake Whipple Truss Bridge is a historic bridge across the Cacapon River in Capon Lake, West Virginia. The bridge's Whipple truss technology was developed by civil engineer Squire Whipple in 1847, and modified by J. W. Murphy in 1859 to include pinned eyebar connections.</p>
+            </div>
+        </div>
+        
+        <div class="row content">
+            <div class="col-xs-12 col-sm-6 col-sm-push-1 content" style="background-color:#eee;">
+                <p>The Capon Lake Whipple Truss Bridge is a historic bridge across the Cacapon River in Capon Lake, West Virginia. The bridge's Whipple truss technology was developed by civil engineer Squire Whipple in 1847, and modified by J. W. Murphy in 1859 to include pinned eyebar connections.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-sm-push-1">
+                <img ng-src={{service.img}} alt={{service.name}}>
+            </div>
+        </div>
+        
+        <div class="row content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-1">
+                <img ng-src={{service.img}} alt={{service.name}}>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-push-2 content" style="background-color:#eee;">
+                <p>The Capon Lake Whipple Truss Bridge is a historic bridge across the Cacapon River in Capon Lake, West Virginia. The bridge's Whipple truss technology was developed by civil engineer Squire Whipple in 1847, and modified by J. W. Murphy in 1859 to include pinned eyebar connections.</p>
+            </div>
+        </div>
+        
+        <div class="row footer text-center">
+            For more information, email us at <a>email@gmail.com</a> or call us at <a>(626) xxx-xxxx</a>.
+        </div>        
     </div>
-    <p style="padding:500px;"></p>
 </div>
