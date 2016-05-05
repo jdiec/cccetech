@@ -226,6 +226,9 @@ nav{
     h4.title{
         padding-bottom: 40px;
     }
+    a{
+        text-decoration: none;
+    }
     img{
         display: block;
         margin: 0 auto;
@@ -238,6 +241,13 @@ nav{
     }
     .content{
         margin-top: 10px;
+        @include breakpoint(xs){
+            padding: 10px;
+        }
+        img{
+            height: 200px;
+            width: 300px;
+        }
     }
     .footer{
         padding: 40px;

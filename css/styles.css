@@ -238,62 +238,77 @@ nav .icon-bar {
   padding-bottom: 40px;
 }
 /* line 229, ../scss/styles.scss */
+#servicedetails a {
+  text-decoration: none;
+}
+/* line 232, ../scss/styles.scss */
 #servicedetails img {
   display: block;
   margin: 0 auto;
 }
-/* line 234, ../scss/styles.scss */
+/* line 237, ../scss/styles.scss */
 #servicedetails .col-xs-12.main img {
   height: 300px;
   width: 100%;
 }
-/* line 239, ../scss/styles.scss */
+/* line 242, ../scss/styles.scss */
 #servicedetails .content {
   margin-top: 10px;
 }
-/* line 242, ../scss/styles.scss */
+@media (max-width: 767px) {
+  /* line 242, ../scss/styles.scss */
+  #servicedetails .content {
+    padding: 10px;
+  }
+}
+/* line 247, ../scss/styles.scss */
+#servicedetails .content img {
+  height: 200px;
+  width: 300px;
+}
+/* line 252, ../scss/styles.scss */
 #servicedetails .footer {
   padding: 40px;
   padding-top: 80px;
 }
 
-/* line 249, ../scss/styles.scss */
+/* line 259, ../scss/styles.scss */
 #comparison {
   background-color: #fdf2ef;
 }
 
-/* line 253, ../scss/styles.scss */
+/* line 263, ../scss/styles.scss */
 #testimonials {
   position: relative;
   background-color: #FFFFFF;
 }
-/* line 259, ../scss/styles.scss */
+/* line 269, ../scss/styles.scss */
 #testimonials button {
   border: none;
   padding: 5px;
 }
-/* line 262, ../scss/styles.scss */
+/* line 272, ../scss/styles.scss */
 #testimonials button:hover {
   box-shadow: 0px 0px 10px 0px #888888;
 }
-/* line 267, ../scss/styles.scss */
+/* line 277, ../scss/styles.scss */
 #testimonials button.prev {
   position: absolute;
   top: 40%;
   left: 0;
 }
-/* line 273, ../scss/styles.scss */
+/* line 283, ../scss/styles.scss */
 #testimonials button.next {
   position: absolute;
   top: 40%;
   right: 0;
 }
-/* line 279, ../scss/styles.scss */
+/* line 289, ../scss/styles.scss */
 #testimonials img {
   height: 50px;
   width: 50px;
 }
-/* line 284, ../scss/styles.scss */
+/* line 294, ../scss/styles.scss */
 #testimonials .client-quote-mark {
   position: absolute;
   top: -15px;
@@ -302,41 +317,41 @@ nav .icon-bar {
   width: 50px;
   opacity: 0.3;
 }
-/* line 293, ../scss/styles.scss */
+/* line 303, ../scss/styles.scss */
 #testimonials .client-quote-mark path {
   fill: #c99065;
 }
-/* line 296, ../scss/styles.scss */
+/* line 306, ../scss/styles.scss */
 #testimonials h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 16pt;
   color: #5f5d5c;
 }
-/* line 301, ../scss/styles.scss */
+/* line 311, ../scss/styles.scss */
 #testimonials p, #testimonials cite {
   color: #909090;
 }
 
-/* line 307, ../scss/styles.scss */
+/* line 317, ../scss/styles.scss */
 #contact {
   background-color: #e5eaee;
 }
-/* line 310, ../scss/styles.scss */
+/* line 320, ../scss/styles.scss */
 #contact form label {
   color: saddlebrown;
   font-weight: 700;
 }
-/* line 314, ../scss/styles.scss */
+/* line 324, ../scss/styles.scss */
 #contact form .form-control {
   border-radius: 0px;
   border-color: #e49b44;
   border-width: medium;
 }
-/* line 319, ../scss/styles.scss */
+/* line 329, ../scss/styles.scss */
 #contact form span {
   color: red;
 }
-/* line 322, ../scss/styles.scss */
+/* line 332, ../scss/styles.scss */
 #contact form #submitbutton {
   transition: 500ms;
   -webkit-transition: 500ms;
@@ -344,19 +359,19 @@ nav .icon-bar {
   -o-transition: 500ms;
   -ms-transition: 500ms;
 }
-/* line 325, ../scss/styles.scss */
+/* line 335, ../scss/styles.scss */
 #contact form #submitbutton:hover {
   color: #FFFFFF;
   background-color: blue;
 }
-/* line 331, ../scss/styles.scss */
+/* line 341, ../scss/styles.scss */
 #contact form #submitbutton[disabled]:hover {
   color: #909090;
   background-color: transparent;
 }
 
 /* FOOTER */
-/* line 340, ../scss/styles.scss */
+/* line 350, ../scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -365,7 +380,7 @@ footer {
   margin-left: -50%;
   z-index: -1;
 }
-/* line 347, ../scss/styles.scss */
+/* line 357, ../scss/styles.scss */
 footer p {
   font-size: 10pt;
   color: #909090;
