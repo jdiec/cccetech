@@ -241,6 +241,9 @@ nav{
     button{
         border: none;
         padding: 5px;
+        &:hover{
+            box-shadow: 0px 0px 10px 0px #888888;
+        }
     }
     
     button.prev{
