@@ -58,7 +58,7 @@ cccetechApp
             $scope.class = "";
             
             $scope.changeClass = function(){
-                    $scope.class = "shake";
+                    $scope.class = "bigEntrance";
                     $timeout(function(){
                         $scope.class = "";
                         console.log($scope.class);

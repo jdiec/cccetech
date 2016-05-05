@@ -12,12 +12,13 @@
     
     
     <div id="testimonials" class="content" ng-controller="TestimonialsController">
-        <div class="container text-center" ng-class="class">
+        <div class="container text-center">
             <h1>Testimonials</h1>
             
             <button class="prev" ng-click="prev()"><img src="img/back.svg"></button>
             <button class="next" ng-click="next()"><img src="img/next.svg"></button>
             
+            <div ng-class="class">
             
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
                 <div class="client-quote-mark"><?xml version="1.0" encoding="utf-8"?>
@@ -39,11 +40,8 @@
                 <p>{{testimonial.date}}</p>
             </div>
         </div>
-        
-
-        
-        
     </div>
+</div>
     
     
     
