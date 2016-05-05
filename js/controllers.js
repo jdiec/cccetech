@@ -48,15 +48,27 @@ cccetechApp
         
     }])
 
-    .controller('TestimonialsController', ['$scope',
-                'testimonialsFactory', 
-                function($scope, testimonialsFactory){
+    .controller('TestimonialsController', ['$scope', '$timeout',
+                'testimonialsFactory',
+                function($scope, $timeout, testimonialsFactory){
                     
             $scope.testimonials = testimonialsFactory.getTestimonials();
             $scope.testimonial = $scope.testimonials[0];
             $scope.index = 0;
+            $scope.class = "";
             
+            $scope.changeClass = function(){
+                    $scope.class = "shake";
+                    $timeout(function(){
+                        $scope.class = "";
+                        console.log($scope.class);
+                    }, 500);
+            };
+                    
             $scope.prev = function(){
+                $scope.changeClass();
+                //$scope.class = "shake";
+                
                 if ($scope.index > $scope.testimonials.length-1){
                     $scope.index = 0;
                 }else if ($scope.index <= 0){
@@ -66,9 +78,10 @@ cccetechApp
                 }
                 $scope.testimonial = $scope.testimonials[$scope.index];
                 console.log("index: " + $scope.index);
-            }        
+            };        
                         
-            $scope.next = function(){
+            $scope.next = function(){ 
+                $scope.changeClass();
                 if ($scope.index >= $scope.testimonials.length-1){
                     $scope.index = 0;
                 }else if ($scope.index < 0){
@@ -78,9 +91,8 @@ cccetechApp
                 }
                 $scope.testimonial = $scope.testimonials[$scope.index];
                 console.log("index: " + $scope.index);
-            }
+            };
                     
-            
                     
                     
     }])

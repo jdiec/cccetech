@@ -30,7 +30,10 @@ cccetechApp.config(function($stateProvider, $urlRouterProvider){
                 }
             }
         })
-    
-    
-    
 });
+
+
+
+
+
+

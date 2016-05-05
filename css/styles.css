@@ -1,4 +1,34 @@
-/* line 4, ../scss/styles.scss */
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(2px, 2px) rotate(20deg);
+  }
+  20% {
+    -webkit-transform: translate(-4px, -4px) rotate(-20deg);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px) rotate(20deg);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px) rotate(-20deg);
+  }
+  80% {
+    -webkit-transform: translate(4px, -4px) rotate(20deg);
+  }
+  100% {
+    -webkit-transform: translate(-2px, 2px) rotate(-20deg);
+  }
+}
+/* line 21, ../scss/styles.scss */
+.shake {
+  -webkit-animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  animation-duration: 0.6;
+}
+
+/* line 34, ../scss/styles.scss */
 .slide-pop {
   left: 0;
   top: 0;
@@ -6,40 +36,40 @@
   height: 100%;
 }
 
-/* line 10, ../scss/styles.scss */
+/* line 40, ../scss/styles.scss */
 .slide-pop.ng-enter,
 .slide-pop.ng-leave {
   -webkit-transition: all .6s linear;
   transition: all .6s linear;
 }
 
-/* line 15, ../scss/styles.scss */
+/* line 45, ../scss/styles.scss */
 .slide-pop.ng-enter {
   opacity: 0;
   -webkit-transform: scale(0.5);
   transform: scale(0.5);
 }
 
-/* line 20, ../scss/styles.scss */
+/* line 50, ../scss/styles.scss */
 .slide-pop.ng-enter-active {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-/* line 25, ../scss/styles.scss */
+/* line 55, ../scss/styles.scss */
 .slide-pop.ng-leave {
   left: 0;
   opacity: .5;
 }
 
-/* line 29, ../scss/styles.scss */
+/* line 59, ../scss/styles.scss */
 .slide-pop.ng-leave-active {
   left: -100%;
   opacity: 0;
 }
 
-/* line 34, ../scss/styles.scss */
+/* line 64, ../scss/styles.scss */
 .reverse .page.slide-pop.ng-enter {
   opacity: .5;
   left: -100%;
@@ -47,13 +77,13 @@
   transform: scale(1);
 }
 
-/* line 40, ../scss/styles.scss */
+/* line 70, ../scss/styles.scss */
 .reverse .page.slide-pop.ng-enter-active {
   opacity: 1;
   left: 0;
 }
 
-/* line 44, ../scss/styles.scss */
+/* line 74, ../scss/styles.scss */
 .reverse .page.slide-pop.ng-leave {
   opacity: .5;
   -webkit-transform: scale(1);
@@ -62,21 +92,21 @@
   right: 0;
 }
 
-/* line 51, ../scss/styles.scss */
+/* line 81, ../scss/styles.scss */
 .reverse .page.slide-pop.ng-leave-active {
   opacity: 0;
   -webkit-transform: scale(0.5);
   transform: scale(0.5);
 }
 
-/* line 79, ../scss/styles.scss */
+/* line 109, ../scss/styles.scss */
 .heading, h1, nav a {
   color: #1d8e2d;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-/* line 93, ../scss/styles.scss */
+/* line 123, ../scss/styles.scss */
 .buttonDefault, #contact form #submitbutton {
   background-color: Transparent;
   font-size: 18pt;
@@ -86,23 +116,23 @@
   border-color: #909090;
 }
 
-/* line 102, ../scss/styles.scss */
+/* line 132, ../scss/styles.scss */
 html, body {
   overflow-x: hidden;
 }
 
-/* line 106, ../scss/styles.scss */
+/* line 136, ../scss/styles.scss */
 h1 {
   font-size: 14pt;
   margin-bottom: 50px;
 }
 
 /* NAVIGATION BAR */
-/* line 114, ../scss/styles.scss */
+/* line 144, ../scss/styles.scss */
 nav {
   background-color: #FFFFFF;
 }
-/* line 119, ../scss/styles.scss */
+/* line 149, ../scss/styles.scss */
 nav li {
   transition: 1s;
   -webkit-transition: 1s;
@@ -110,21 +140,21 @@ nav li {
   -o-transition: 1s;
   -ms-transition: 1s;
 }
-/* line 124, ../scss/styles.scss */
+/* line 154, ../scss/styles.scss */
 nav a:hover {
   color: #094411;
 }
-/* line 128, ../scss/styles.scss */
+/* line 158, ../scss/styles.scss */
 nav .active {
   background-color: #eee;
 }
-/* line 131, ../scss/styles.scss */
+/* line 161, ../scss/styles.scss */
 nav .icon-bar {
   background-color: #909090;
 }
 
 /* JUMBOTRON */
-/* line 138, ../scss/styles.scss */
+/* line 168, ../scss/styles.scss */
 .background {
   min-height: 100%;
   background-repeat: no-repeat;
@@ -134,28 +164,28 @@ nav .icon-bar {
   z-index: 1;
 }
 
-/* line 147, ../scss/styles.scss */
+/* line 177, ../scss/styles.scss */
 .background-img {
   background-image: url("../img/trello.jpg");
 }
 
-/* line 151, ../scss/styles.scss */
+/* line 181, ../scss/styles.scss */
 .jumbotron {
   padding: 300px;
 }
 
-/* line 155, ../scss/styles.scss */
+/* line 185, ../scss/styles.scss */
 .content {
   padding: 40px;
 }
 
-/* line 159, ../scss/styles.scss */
+/* line 189, ../scss/styles.scss */
 #services {
   margin-top: -3%;
   padding: 7% 7% 7% 7%;
   background-color: #FFFFFF;
 }
-/* line 163, ../scss/styles.scss */
+/* line 193, ../scss/styles.scss */
 #services h4 {
   font-family: 'Noto Sans', sans-serif;
   transition: 500ms;
@@ -165,18 +195,18 @@ nav .icon-bar {
   -ms-transition: 500ms;
 }
 @media (min-width: 768px) {
-  /* line 163, ../scss/styles.scss */
+  /* line 193, ../scss/styles.scss */
   #services h4 {
     font-size: 16pt;
   }
 }
 @media (max-width: 767px) {
-  /* line 163, ../scss/styles.scss */
+  /* line 193, ../scss/styles.scss */
   #services h4 {
     font-size: 10pt;
   }
 }
-/* line 176, ../scss/styles.scss */
+/* line 206, ../scss/styles.scss */
 #services img {
   height: 150px;
   width: 150px;
@@ -188,50 +218,55 @@ nav .icon-bar {
   -ms-transition: 500ms;
 }
 @media (max-width: 767px) {
-  /* line 176, ../scss/styles.scss */
+  /* line 206, ../scss/styles.scss */
   #services img {
     height: 100px;
     width: 100px;
   }
 }
-/* line 189, ../scss/styles.scss */
+/* line 219, ../scss/styles.scss */
 #services .col-xs-6, #services .col-sm-4 {
   margin-bottom: 30px;
 }
 
-/* line 197, ../scss/styles.scss */
+/* line 224, ../scss/styles.scss */
+#servicedetails {
+  background-color: #FFFFFF;
+}
+
+/* line 231, ../scss/styles.scss */
 #comparison {
   background-color: #fdf2ef;
 }
 
-/* line 201, ../scss/styles.scss */
+/* line 235, ../scss/styles.scss */
 #testimonials {
   position: relative;
   background-color: #FFFFFF;
 }
-/* line 207, ../scss/styles.scss */
+/* line 241, ../scss/styles.scss */
 #testimonials button {
   border: none;
   padding: 5px;
 }
-/* line 212, ../scss/styles.scss */
+/* line 246, ../scss/styles.scss */
 #testimonials button.prev {
   position: absolute;
   top: 40%;
   left: 0;
 }
-/* line 218, ../scss/styles.scss */
+/* line 252, ../scss/styles.scss */
 #testimonials button.next {
   position: absolute;
   top: 40%;
   right: 0;
 }
-/* line 224, ../scss/styles.scss */
+/* line 258, ../scss/styles.scss */
 #testimonials img {
   height: 50px;
   width: 50px;
 }
-/* line 229, ../scss/styles.scss */
+/* line 263, ../scss/styles.scss */
 #testimonials .client-quote-mark {
   position: absolute;
   top: -15px;
@@ -240,41 +275,41 @@ nav .icon-bar {
   width: 50px;
   opacity: 0.3;
 }
-/* line 238, ../scss/styles.scss */
+/* line 272, ../scss/styles.scss */
 #testimonials .client-quote-mark path {
   fill: #c99065;
 }
-/* line 241, ../scss/styles.scss */
+/* line 275, ../scss/styles.scss */
 #testimonials h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 16pt;
   color: #5f5d5c;
 }
-/* line 246, ../scss/styles.scss */
+/* line 280, ../scss/styles.scss */
 #testimonials p, #testimonials cite {
   color: #909090;
 }
 
-/* line 252, ../scss/styles.scss */
+/* line 286, ../scss/styles.scss */
 #contact {
   background-color: #e5eaee;
 }
-/* line 255, ../scss/styles.scss */
+/* line 289, ../scss/styles.scss */
 #contact form label {
   color: saddlebrown;
   font-weight: 700;
 }
-/* line 259, ../scss/styles.scss */
+/* line 293, ../scss/styles.scss */
 #contact form .form-control {
   border-radius: 0px;
   border-color: #e49b44;
   border-width: medium;
 }
-/* line 264, ../scss/styles.scss */
+/* line 298, ../scss/styles.scss */
 #contact form span {
   color: red;
 }
-/* line 267, ../scss/styles.scss */
+/* line 301, ../scss/styles.scss */
 #contact form #submitbutton {
   transition: 500ms;
   -webkit-transition: 500ms;
@@ -282,19 +317,19 @@ nav .icon-bar {
   -o-transition: 500ms;
   -ms-transition: 500ms;
 }
-/* line 270, ../scss/styles.scss */
+/* line 304, ../scss/styles.scss */
 #contact form #submitbutton:hover {
   color: #FFFFFF;
   background-color: blue;
 }
-/* line 276, ../scss/styles.scss */
+/* line 310, ../scss/styles.scss */
 #contact form #submitbutton[disabled]:hover {
   color: #909090;
   background-color: transparent;
 }
 
 /* FOOTER */
-/* line 285, ../scss/styles.scss */
+/* line 319, ../scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -303,7 +338,7 @@ footer {
   margin-left: -50%;
   z-index: -1;
 }
-/* line 292, ../scss/styles.scss */
+/* line 326, ../scss/styles.scss */
 footer p {
   font-size: 10pt;
   color: #909090;

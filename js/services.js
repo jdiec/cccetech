@@ -73,10 +73,6 @@ cccetechApp
             this.getTestimonials = function(){
                 return testimonials;
             };
-        
-//            this.getTestimonial = function(index){
-//                return testimonials[index];  
-//            };
             
     }])
 
