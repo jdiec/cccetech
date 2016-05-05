@@ -13,18 +13,15 @@ cccetechApp
             
             $scope.duScrollTo = function(targetID){
                   
-                  var element = angular.element(document.getElementById(targetID));
+                  var element = angular.element(document
+                                    .getElementById(targetID));
                   $document.scrollToElementAnimated(element);
             };
-            
-            
             
 //            $scope.anchorScrollTo = function(targetID){
 //                $location.hash(targetID);
 //                $anchorScroll();
 //            };
-        
-        
     }])
 
     .controller('ServicesController', ['$scope', 
@@ -51,8 +48,41 @@ cccetechApp
         
     }])
 
-    .controller('TestimonialsController', ['$scope', function($scope){
-        
+    .controller('TestimonialsController', ['$scope',
+                'testimonialsFactory', 
+                function($scope, testimonialsFactory){
+                    
+            $scope.testimonials = testimonialsFactory.getTestimonials();
+            $scope.testimonial = $scope.testimonials[0];
+            $scope.index = 0;
+            
+            $scope.prev = function(){
+                if ($scope.index > $scope.testimonials.length-1){
+                    $scope.index = 0;
+                }else if ($scope.index <= 0){
+                    $scope.index = $scope.testimonials.length-1;
+                }else{
+                    $scope.index--;
+                }
+                $scope.testimonial = $scope.testimonials[$scope.index];
+                console.log("index: " + $scope.index);
+            }        
+                        
+            $scope.next = function(){
+                if ($scope.index >= $scope.testimonials.length-1){
+                    $scope.index = 0;
+                }else if ($scope.index < 0){
+                    $scope.index = $scope.testimonials.length-1;
+                }else{
+                    $scope.index++;
+                }
+                $scope.testimonial = $scope.testimonials[$scope.index];
+                console.log("index: " + $scope.index);
+            }
+                    
+            
+                    
+                    
     }])
 
 

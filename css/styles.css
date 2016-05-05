@@ -206,29 +206,75 @@ nav .icon-bar {
 
 /* line 201, ../scss/styles.scss */
 #testimonials {
+  position: relative;
   background-color: #FFFFFF;
 }
+/* line 207, ../scss/styles.scss */
+#testimonials button {
+  border: none;
+  padding: 5px;
+}
+/* line 212, ../scss/styles.scss */
+#testimonials button.prev {
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+/* line 218, ../scss/styles.scss */
+#testimonials button.next {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+/* line 224, ../scss/styles.scss */
+#testimonials img {
+  height: 50px;
+  width: 50px;
+}
+/* line 229, ../scss/styles.scss */
+#testimonials .client-quote-mark {
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+  opacity: 0.3;
+}
+/* line 238, ../scss/styles.scss */
+#testimonials .client-quote-mark path {
+  fill: #c99065;
+}
+/* line 241, ../scss/styles.scss */
+#testimonials h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16pt;
+  color: #5f5d5c;
+}
+/* line 246, ../scss/styles.scss */
+#testimonials p, #testimonials cite {
+  color: #909090;
+}
 
-/* line 205, ../scss/styles.scss */
+/* line 252, ../scss/styles.scss */
 #contact {
   background-color: #e5eaee;
 }
-/* line 208, ../scss/styles.scss */
+/* line 255, ../scss/styles.scss */
 #contact form label {
   color: saddlebrown;
   font-weight: 700;
 }
-/* line 212, ../scss/styles.scss */
+/* line 259, ../scss/styles.scss */
 #contact form .form-control {
   border-radius: 0px;
   border-color: #e49b44;
   border-width: medium;
 }
-/* line 217, ../scss/styles.scss */
+/* line 264, ../scss/styles.scss */
 #contact form span {
   color: red;
 }
-/* line 220, ../scss/styles.scss */
+/* line 267, ../scss/styles.scss */
 #contact form #submitbutton {
   transition: 500ms;
   -webkit-transition: 500ms;
@@ -236,19 +282,19 @@ nav .icon-bar {
   -o-transition: 500ms;
   -ms-transition: 500ms;
 }
-/* line 223, ../scss/styles.scss */
+/* line 270, ../scss/styles.scss */
 #contact form #submitbutton:hover {
   color: #FFFFFF;
   background-color: blue;
 }
-/* line 229, ../scss/styles.scss */
+/* line 276, ../scss/styles.scss */
 #contact form #submitbutton[disabled]:hover {
   color: #909090;
   background-color: transparent;
 }
 
 /* FOOTER */
-/* line 238, ../scss/styles.scss */
+/* line 285, ../scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -257,7 +303,7 @@ footer {
   margin-left: -50%;
   z-index: -1;
 }
-/* line 245, ../scss/styles.scss */
+/* line 292, ../scss/styles.scss */
 footer p {
   font-size: 10pt;
   color: #909090;
