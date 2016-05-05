@@ -57,16 +57,15 @@ cccetechApp
             $scope.index = 0;
             $scope.class = "";
             
-            $scope.changeClass = function(){
-                    $scope.class = "bigEntrance";
+            $scope.changeClass = function(className){
+                    $scope.class = className;
                     $timeout(function(){
                         $scope.class = "";
-                        console.log($scope.class);
                     }, 500);
             };
                     
             $scope.prev = function(){
-                $scope.changeClass();
+                $scope.changeClass('bigEntrance');
                 //$scope.class = "shake";
                 
                 if ($scope.index > $scope.testimonials.length-1){
@@ -81,7 +80,7 @@ cccetechApp
             };        
                         
             $scope.next = function(){ 
-                $scope.changeClass();
+                $scope.changeClass('bigEntrance');
                 if ($scope.index >= $scope.testimonials.length-1){
                     $scope.index = 0;
                 }else if ($scope.index < 0){
