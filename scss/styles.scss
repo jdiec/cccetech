@@ -280,7 +280,12 @@ nav{
     background-color: #f6598d;
     padding-bottom: 100px;
     .rotatedSection{
-        background-color: #f6598d;
+        //background-color: #f6598d;
+    }
+    .rotatedSection.top{
+        top: -15%;
+        height: 40%;
+        //background-color: #f6598d;
     }
 }
 
@@ -347,7 +352,12 @@ nav{
         bottom: -15%;
         background-color: #e5eaee;
     }
-    .col-xs-12, .col-sm-4{
+    .rotatedSection.top{
+        top: -5%;
+        height: 40%;
+    }
+    h1, .container, .col-xs-12, .col-sm-4{
+        position: relative;
         z-index: 2;
     }
     form{
