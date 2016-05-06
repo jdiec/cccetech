@@ -247,41 +247,59 @@ nav {
   #comparison h1 {
     color: #eee;
     padding: 3% 0 3% 0; }
-  /* line 288, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
-  #comparison .col-xs-12 img, #comparison .col-sm-4 img {
-    width: 100%;
-    height: 250px; }
-  /* line 293, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 287, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  #comparison .col-xs-12, #comparison .col-sm-4 {
+    position: relative;
+    height: 350px;
+    overflow: hidden; }
+    /* line 291, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+    #comparison .col-xs-12 img, #comparison .col-sm-4 img {
+      width: 100%;
+      height: 250px; }
+  /* line 296, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #comparison .img-caption {
-    padding: 3px; }
+    height: 350px;
+    padding: 15px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -ms-transition: 1s; }
+    /* line 299, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+    #comparison .img-caption h4, #comparison .img-caption p {
+      margin: 0px 0px 10px 10px; }
+    /* line 303, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+    #comparison .img-caption:hover {
+      position: absolute;
+      top: 0; }
 
-/* line 310, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+/* line 322, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
 #testimonials {
   position: relative;
   padding: 200px;
   background-color: #FFFFFF; }
-  /* line 317, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 329, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #testimonials button {
     border: none;
     padding: 5px; }
-    /* line 320, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+    /* line 332, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
     #testimonials button:hover {
       box-shadow: 0px 0px 10px 0px #888888; }
-  /* line 325, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 337, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #testimonials button.prev {
     position: absolute;
     top: 40%;
     left: 0; }
-  /* line 331, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 343, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #testimonials button.next {
     position: absolute;
     top: 40%;
     right: 0; }
-  /* line 337, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 349, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #testimonials img {
     height: 50px;
     width: 50px; }
-  /* line 342, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 354, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #testimonials .client-quote-mark {
     position: absolute;
     top: -15px;
@@ -289,61 +307,61 @@ nav {
     height: 50px;
     width: 50px;
     opacity: 0.3; }
-  /* line 351, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 363, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #testimonials .client-quote-mark path {
     fill: #c99065; }
-  /* line 354, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 366, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #testimonials h4 {
     font-family: 'Raleway', sans-serif;
     font-size: 16pt;
     color: #5f5d5c; }
-  /* line 359, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 371, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #testimonials p, #testimonials cite {
     color: #909090; }
 
-/* line 365, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+/* line 377, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
 #contact {
   position: relative;
   background-color: #e5eaee; }
-  /* line 368, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 380, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact .rotatedSection {
     z-index: 0;
     bottom: -15%;
     background-color: #e5eaee; }
-  /* line 377, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 389, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact h1, #contact .container, #contact .col-xs-12, #contact .col-sm-4 {
     position: relative;
     z-index: 2; }
-  /* line 382, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 394, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact form label {
     color: saddlebrown;
     font-weight: 700; }
-  /* line 386, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 398, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact form .form-control {
     border-radius: 0px;
     border-color: #e49b44;
     border-width: medium; }
-  /* line 391, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 403, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact form span {
     color: red; }
-  /* line 394, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 406, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact form #submitbutton {
     transition: 500ms;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
     -ms-transition: 500ms; }
-    /* line 397, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+    /* line 409, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
     #contact form #submitbutton:hover {
       color: #FFFFFF;
       background-color: blue; }
-  /* line 403, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 415, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   #contact form #submitbutton[disabled]:hover {
     color: #909090;
     background-color: transparent; }
 
 /* FOOTER */
-/* line 412, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+/* line 424, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -351,7 +369,7 @@ footer {
   left: 50%;
   margin-left: -50%;
   z-index: -1; }
-  /* line 419, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
+  /* line 431, C:/Users/Jacques/Desktop/website/cccetech/scss/styles.scss */
   footer p {
     font-size: 10pt;
     color: #909090;

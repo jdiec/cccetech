@@ -285,13 +285,25 @@ nav{
         padding: 3% 0 3% 0;
     }
     .col-xs-12, .col-sm-4{
+        position: relative;
+        height: 350px;
+        overflow: hidden;
         img{
             width: 100%;
             height: 250px;
         }
     }
     .img-caption{
-        padding: 3px;
+        height:350px;
+        padding: 15px;
+        h4, p{
+            margin: 0px 0px 10px 10px;
+        }
+        @include transition(1s);
+        &:hover{
+            position: absolute;
+            top: 0;
+        }
     }
     
 //    .rotatedSection{
