@@ -120,6 +120,25 @@ $gray: #909090;
         -ms-transition: $duration;
 }
 
+@mixin transform($type){
+        transform: $type;
+        -webkit-transform: $type;
+        -moz-transform: $type;
+        -o-transform: $type;
+        -ms-transform: $type;
+}
+
+.rotatedSection{
+        z-index: 1;
+        width: 150%;
+        height: 25%;
+        position: absolute;
+        bottom: -25%;
+        left: -5%;
+        transform-origin: 0;
+        @include transform(rotate(-3deg));
+}
+
 .buttonDefault{
         background-color: Transparent;
         font-size: 18pt;
@@ -257,11 +276,17 @@ nav{
 }
 
 #comparison{
-    background-color: #fdf2ef; //#FFFFFF;
+    position: relative;
+    background-color: #f6598d;
+    padding-bottom: 100px;
+    .rotatedSection{
+        background-color: #f6598d;
+    }
 }
 
 #testimonials{
     position: relative;
+    padding: 200px;
     .col-sm-8{
         //padding: 100px;
     }
@@ -315,7 +340,16 @@ nav{
 }
 
 #contact{
+    position: relative;
     background-color: #e5eaee;
+    .rotatedSection{
+        z-index: 0;
+        bottom: -15%;
+        background-color: #e5eaee;
+    }
+    .col-xs-12, .col-sm-4{
+        z-index: 2;
+    }
     form{
         label{
             color: saddlebrown;
