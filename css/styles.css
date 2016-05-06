@@ -198,7 +198,7 @@ nav .icon-bar {
 /* line 208, ../scss/styles.scss */
 #services {
   margin-top: -3%;
-  padding: 7% 7% 7% 7%;
+  padding: 7% 7% 10% 7%;
   background-color: #FFFFFF;
 }
 /* line 212, ../scss/styles.scss */
@@ -291,48 +291,58 @@ nav .icon-bar {
 /* line 278, ../scss/styles.scss */
 #comparison {
   position: relative;
-  background-color: #f6598d;
+  z-index: 2;
+  background-color: #bd90d6;
   padding-bottom: 100px;
 }
-/* line 285, ../scss/styles.scss */
-#comparison .rotatedSection.top {
-  top: -15%;
-  height: 40%;
+/* line 283, ../scss/styles.scss */
+#comparison h1 {
+  color: #eee;
+  padding: 3% 0 3% 0;
+}
+/* line 288, ../scss/styles.scss */
+#comparison .col-xs-12 img, #comparison .col-sm-4 img {
+  width: 100%;
+  height: 250px;
+}
+/* line 293, ../scss/styles.scss */
+#comparison .img-caption {
+  padding: 3px;
 }
 
-/* line 292, ../scss/styles.scss */
+/* line 310, ../scss/styles.scss */
 #testimonials {
   position: relative;
   padding: 200px;
   background-color: #FFFFFF;
 }
-/* line 299, ../scss/styles.scss */
+/* line 317, ../scss/styles.scss */
 #testimonials button {
   border: none;
   padding: 5px;
 }
-/* line 302, ../scss/styles.scss */
+/* line 320, ../scss/styles.scss */
 #testimonials button:hover {
   box-shadow: 0px 0px 10px 0px #888888;
 }
-/* line 307, ../scss/styles.scss */
+/* line 325, ../scss/styles.scss */
 #testimonials button.prev {
   position: absolute;
   top: 40%;
   left: 0;
 }
-/* line 313, ../scss/styles.scss */
+/* line 331, ../scss/styles.scss */
 #testimonials button.next {
   position: absolute;
   top: 40%;
   right: 0;
 }
-/* line 319, ../scss/styles.scss */
+/* line 337, ../scss/styles.scss */
 #testimonials img {
   height: 50px;
   width: 50px;
 }
-/* line 324, ../scss/styles.scss */
+/* line 342, ../scss/styles.scss */
 #testimonials .client-quote-mark {
   position: absolute;
   top: -15px;
@@ -341,58 +351,53 @@ nav .icon-bar {
   width: 50px;
   opacity: 0.3;
 }
-/* line 333, ../scss/styles.scss */
+/* line 351, ../scss/styles.scss */
 #testimonials .client-quote-mark path {
   fill: #c99065;
 }
-/* line 336, ../scss/styles.scss */
+/* line 354, ../scss/styles.scss */
 #testimonials h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 16pt;
   color: #5f5d5c;
 }
-/* line 341, ../scss/styles.scss */
+/* line 359, ../scss/styles.scss */
 #testimonials p, #testimonials cite {
   color: #909090;
 }
 
-/* line 347, ../scss/styles.scss */
+/* line 365, ../scss/styles.scss */
 #contact {
   position: relative;
   background-color: #e5eaee;
 }
-/* line 350, ../scss/styles.scss */
+/* line 368, ../scss/styles.scss */
 #contact .rotatedSection {
   z-index: 0;
   bottom: -15%;
   background-color: #e5eaee;
 }
-/* line 355, ../scss/styles.scss */
-#contact .rotatedSection.top {
-  top: -5%;
-  height: 40%;
-}
-/* line 359, ../scss/styles.scss */
+/* line 377, ../scss/styles.scss */
 #contact h1, #contact .container, #contact .col-xs-12, #contact .col-sm-4 {
   position: relative;
   z-index: 2;
 }
-/* line 364, ../scss/styles.scss */
+/* line 382, ../scss/styles.scss */
 #contact form label {
   color: saddlebrown;
   font-weight: 700;
 }
-/* line 368, ../scss/styles.scss */
+/* line 386, ../scss/styles.scss */
 #contact form .form-control {
   border-radius: 0px;
   border-color: #e49b44;
   border-width: medium;
 }
-/* line 373, ../scss/styles.scss */
+/* line 391, ../scss/styles.scss */
 #contact form span {
   color: red;
 }
-/* line 376, ../scss/styles.scss */
+/* line 394, ../scss/styles.scss */
 #contact form #submitbutton {
   transition: 500ms;
   -webkit-transition: 500ms;
@@ -400,19 +405,19 @@ nav .icon-bar {
   -o-transition: 500ms;
   -ms-transition: 500ms;
 }
-/* line 379, ../scss/styles.scss */
+/* line 397, ../scss/styles.scss */
 #contact form #submitbutton:hover {
   color: #FFFFFF;
   background-color: blue;
 }
-/* line 385, ../scss/styles.scss */
+/* line 403, ../scss/styles.scss */
 #contact form #submitbutton[disabled]:hover {
   color: #909090;
   background-color: transparent;
 }
 
 /* FOOTER */
-/* line 394, ../scss/styles.scss */
+/* line 412, ../scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -421,7 +426,7 @@ footer {
   margin-left: -50%;
   z-index: -1;
 }
-/* line 401, ../scss/styles.scss */
+/* line 419, ../scss/styles.scss */
 footer p {
   font-size: 10pt;
   color: #909090;

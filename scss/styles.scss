@@ -207,7 +207,7 @@ nav{
 
 #services{
     margin-top: -3%;
-    padding: 7% 7% 7% 7%;
+    padding: 7% 7% 10% 7%;
     background-color: #FFFFFF;
     h4{
         font-family: 'Noto Sans', sans-serif;
@@ -277,16 +277,34 @@ nav{
 
 #comparison{
     position: relative;
-    background-color: #f6598d;
+    z-index: 2;
+    background-color: #bd90d6; //#f6598d;
     padding-bottom: 100px;
-    .rotatedSection{
-        //background-color: #f6598d;
+    h1{
+        color: #eee;
+        padding: 3% 0 3% 0;
     }
-    .rotatedSection.top{
-        top: -15%;
-        height: 40%;
-        //background-color: #f6598d;
+    .col-xs-12, .col-sm-4{
+        img{
+            width: 100%;
+            height: 250px;
+        }
     }
+    .img-caption{
+        padding: 3px;
+    }
+    
+//    .rotatedSection{
+//        background-color: #bd90d6;
+//        bottom: -5%;
+//        @include transform(rotate(1deg));
+//    }
+    
+//    .rotatedSection.top{
+//        top: 0;
+//        height: 40%;
+//        background-color: #f6598d;
+//    }
 }
 
 #testimonials{
@@ -352,10 +370,10 @@ nav{
         bottom: -15%;
         background-color: #e5eaee;
     }
-    .rotatedSection.top{
-        top: -5%;
-        height: 40%;
-    }
+//    .rotatedSection.top{
+//        top: -5%;
+//        height: 40%;
+//    }
     h1, .container, .col-xs-12, .col-sm-4{
         position: relative;
         z-index: 2;

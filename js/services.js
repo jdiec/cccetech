@@ -20,9 +20,9 @@ cccetechApp
 
     .service('comparisonFactory', [function(){
             var comparisons = [
-                    {id:0, name:"Experience", img:"", description:"30 years of mechanical experience, overseas factory trained"},
-                    {id:1, name:"Affordability", img:"", description:"Lower cost for higher quality compared to traditional services"},
-                    {id:2, name:"Flexibility", img:"", description:"Willing to travel across the nation for on-site tech support"}
+                    {id:0, name:"Experience", img:"img/trello.jpg", description:"30 years of mechanical experience, overseas factory trained"},
+                    {id:1, name:"Affordability", img:"img/tech2.jpg", description:"Lower cost for higher quality compared to traditional services"},
+                    {id:2, name:"Flexibility", img:"img/tech3.jpg", description:"Willing to travel across the nation for on-site tech support"}
             ];
             this.getComparisons = function(){
                 return comparisons;    

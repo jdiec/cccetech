@@ -4,8 +4,11 @@
         <h1 class="text-center">What We Offer</h1>
         <div class="row">
             <div class="col-xs-12 col-sm-4" ng-repeat="comparison in comparisons">
-                <h4>{{comparison.name}}</h4>
-                <p>{{comparison.description}}</p>
+                <img ng-src={{comparison.img}} alt={{comparison.name}}>
+                <div class="img-caption" style="background-color:#eee;">
+                    <h4>{{comparison.name}}</h4>
+                    <p>{{comparison.description}}</p>
+                </div>
             </div>
         </div>
         <div class="rotatedSection bottom"></div>
