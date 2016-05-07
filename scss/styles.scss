@@ -227,7 +227,7 @@ nav{
         width: 150px;
         overflow: hidden;
         &:hover{
-
+            box-shadow: 0px 0px 10px 0px #888888;
         }
         @include transition(500ms);
         @include breakpoint(xs){
@@ -295,11 +295,12 @@ nav{
     }
     .img-caption{
         height:350px;
+        width: 100%;
         padding: 15px;
+        @include transition(1s);
         h4, p{
             margin: 0px 0px 10px 10px;
         }
-        @include transition(1s);
         &:hover{
             position: absolute;
             top: 0;
@@ -377,6 +378,9 @@ nav{
 #contact{
     position: relative;
     background-color: #e5eaee;
+    h1{
+        padding: 3% 0 1% 0;
+    }
     .rotatedSection{
         z-index: 0;
         bottom: -15%;
