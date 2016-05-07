@@ -298,13 +298,12 @@ nav{
         height:350px;
         width: 100%;
         padding: 15px;
-        @include transition(1s);
         h4, p{
             margin: 0px 0px 10px 10px;
         }
+        @include transition(700ms);
         &:hover{
-            position: absolute;
-            top: 0;
+            @include transform(translate(0,-250px));
         }
     }
     
