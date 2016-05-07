@@ -61,21 +61,22 @@
                                     <input type="text" name="_gotcha" style="display:none" />
                                     <div class="form-group floating-label-form-group">
                                         <label>Name</label>
-                                        <input type="text" class="form-control" placeholder="Name" id="name" name="Name" ng-model="name" required>
+                                        <input type="text" class="form-control" ng-class="{'red':contactForm.Name.$touched && contactForm.Name.$invalid}" placeholder="Name" id="name" name="Name" ng-model="name" required>
                                         <span ng-show="contactForm.Name.$touched && contactForm.Name.$invalid">Please enter your name.</span>
                                     </div>
                                     <div class="form-group floating-label-form-group">
                                         <label>Email</label>
-                                        <input type="email" class="form-control" placeholder="Email" id="email" name="Email" ng-model="email">
+                                        <input type="email" class="form-control" ng-class="{'red':contactForm.Email.$touched && contactForm.Email.$error.email}" placeholder="Email" id="email" name="Email" ng-model="email">
                                         <span ng-show="contactForm.Email.$touched && contactForm.Email.$error.email">Please enter a valid email.</span>
                                     </div>
                                     <div class="form-group floating-label-form-group">
                                         <label>Phone</label>
-                                        <input type="text" class="form-control" placeholder="Phone" id="phone" name="Phone" ng-model="phone">
+                                        <input type="text" class="form-control" ng-class="{'red':contactForm.Phone.$error.number}" placeholder="Phone" id="phone" name="Phone" ng-model="phone">
+                                        <span ng-show="contactForm.Phone.$error.number">Please enter a valid number.</span>
                                     </div>
                                     <div class="form-group floating-label-form-group">
                                         <label>Message</label>
-                                        <textarea rows="9" class="form-control" placeholder="Message" id="message" name="Message" ng-model="message" required></textarea>
+                                        <textarea rows="9" class="form-control" ng-class="{'red':contactForm.Message.$touched && contactForm.Message.$invalid}" placeholder="Message" id="message" name="Message" ng-model="message" required></textarea>
                                         <span ng-show="contactForm.Message.$touched && contactForm.Message.$invalid">Please enter a message.</span>
                                     </div>
                                     <input id="submitbutton" type="submit" value="Send" ng-disabled="contactForm.$invalid || (!email.length && !phone.length)">

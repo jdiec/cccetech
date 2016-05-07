@@ -433,10 +433,14 @@ nav .icon-bar {
   border-width: medium;
 }
 /* line 426, ../scss/styles.scss */
+#contact form .red {
+  border-color: red;
+}
+/* line 429, ../scss/styles.scss */
 #contact form span {
   color: red;
 }
-/* line 429, ../scss/styles.scss */
+/* line 432, ../scss/styles.scss */
 #contact form #submitbutton {
   transition: 500ms;
   -webkit-transition: 500ms;
@@ -444,19 +448,19 @@ nav .icon-bar {
   -o-transition: 500ms;
   -ms-transition: 500ms;
 }
-/* line 432, ../scss/styles.scss */
+/* line 435, ../scss/styles.scss */
 #contact form #submitbutton:hover {
   color: #FFFFFF;
   background-color: blue;
 }
-/* line 438, ../scss/styles.scss */
+/* line 441, ../scss/styles.scss */
 #contact form #submitbutton[disabled]:hover {
   color: #909090;
   background-color: transparent;
 }
 
 /* FOOTER */
-/* line 447, ../scss/styles.scss */
+/* line 450, ../scss/styles.scss */
 footer {
   width: 100%;
   position: fixed;
@@ -465,7 +469,7 @@ footer {
   margin-left: -50%;
   z-index: -1;
 }
-/* line 454, ../scss/styles.scss */
+/* line 457, ../scss/styles.scss */
 footer p {
   font-size: 10pt;
   color: #909090;
