@@ -35,6 +35,8 @@ cccetechApp
                 ['$scope', 'servicesFactory', '$stateParams',
                  function($scope, servicesFactory, $stateParams){
                      
+            $scope.services = servicesFactory.getServices();
+                     
             $scope.service = servicesFactory
                             .getService(parseInt($stateParams.id,10));                     
     }])

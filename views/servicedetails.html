@@ -2,6 +2,14 @@
     <div class="container content">
         <a ui-sref="app"><h4>Back</h4></a>
         
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Service List
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li ng-repeat="serv in services | orderBy:'name'" ng-class="{'active':serv.name===service.name}"><a ui-sref="app.details({id:serv.id})">{{serv.name}}</a></li>
+            </ul>
+        </div>
+        
         <div class="row">
             <div class="col-xs-12 text-center main content">
                 <h4 class="title">{{service.name}}</h4>

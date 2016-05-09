@@ -248,6 +248,11 @@ nav{
 
 #servicedetails{
     background-color: #FFFFFF;
+    .dropdown-menu>.active>a{
+        background-color: transparent;
+        background-image: none;
+        color: red;
+    }
     h4.title{
         padding-bottom: 40px;
     }
